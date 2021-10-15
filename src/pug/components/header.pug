@@ -1,0 +1,17 @@
+header.header
+
+	button.header__burger.btn.js-burger(type="button")
+		span
+
+	nav.header__menu
+		.header__list(data-aos="fade-left")
+			each object, key in data.header.menu
+				a.header__link.js-to-anchor(
+					href=object.url
+					data-link=key
+				)
+					!= object.name
+
+			img.header__img(src=data.img.headerImg)
+
+			

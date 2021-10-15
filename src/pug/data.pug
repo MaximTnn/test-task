@@ -1,0 +1,187 @@
+-
+	const imgSrcPng = '/images/sprites/png/'
+	const imgSrcSvg = '/images/sprites/svg/'
+
+	const data = {
+		header: {
+			menu: [
+				{
+					url: '#cv',
+					name: 'Резюме'
+				},
+				{
+					url: '#experience',
+					name: 'О себе'
+				},
+				{
+					url: '#skils',
+					name: 'Навыки'
+				}
+			]
+		},
+
+		img: {
+			cv: imgSrcPng + 'bg-cv.png',
+			cvBig: imgSrcPng + 'bg-cv-big.png',
+			avatar: imgSrcPng + 'avatar.png',
+			experience: imgSrcPng + 'experience-men.png',
+			skils: imgSrcPng + 'bg-skils.png',
+			headerImg: imgSrcPng + 'header-img.png'
+		},
+
+		cv: {
+			photo: imgSrcPng + 'avatar.png',
+			email: 'mailto:tyumenaebv.m@gmail.com',
+			city: 'N. Novgorod',
+			tel: 'tel:+79991217662'
+		},
+
+		experience: [
+			{
+				date: 'Июль 2019',
+				icon: imgSrcPng + 'icon-min1.png',
+				position: 'Freelance Designer',
+				logo: '',
+				company: '',
+				location: 'Netherlands, Worldwide',
+				description: 'Available for a project or job in UX/UI, Visual and Product design.',
+				link: [
+					'Commercial tryouts','Personal projects'
+				],
+			},
+			{
+				date: 'Январь 2017 - Сентябрь 2018',
+				icon: imgSrcPng + 'icon-min2.png',
+				position: 'Digital Designer',
+				logo: imgSrcPng + 'logo-min1.png',
+				company: 'J Creative Solutions',
+				location: 'Digital agency in Minsk, Belarus',
+				description: 'Created visuals for digital marketing channels such as social media, promo web and online ads. Developed visual language from scratch or following the branding guidelines. Designed presentations for clients and indoor purposes.',
+				link: [
+					'Agency projects',
+				],
+			},
+			{
+				date: '	Март 2014 - Февраль 2017',
+				icon: imgSrcPng + 'icon-min3.png',
+				position: '	SEO Specialist → Lead SEO Specialist',
+				logo: imgSrcPng + 'logo-min2.png',
+				company: 'OZ.by',
+				location: 'Online bookstore in Minsk, Belarus',
+				description: '	Improved website performance and user experience of the biggest online bookstore OZ in Belarus, being a part of the marketing team,	I interpreted Google Analytics data to IT, content and marketing colleagues. Advised on tech and content optimization strategy, automated processes, provided reports, increased organic traffic up to 150%.',
+				link: [
+					'Annual company report 2016',
+				],
+			},
+			{
+				date: 'Август 2012 - Ноябрь 2013',
+				icon: imgSrcPng + 'icon-min3.png',
+				position: 'Content Specialist',
+				logo: imgSrcPng + 'logo-min3.png',
+				company: '21vek.by',
+				location: 'E-commerce store in Minsk, Belarus',
+				description: 'Added and modified the product information, prepared images and text for the website, developed categories filters, ensure all info is correct in the catalogue with the goal of improving online shopper experience.',
+				link: [],
+			},
+			{
+				date: 'Август 2011 - Ноябрь 2014',
+				icon: imgSrcPng + 'icon-min5.png',
+				position: 'Software Support Engineer',
+				logo: imgSrcPng + 'logo-min4.png',
+				company: 'Integral',
+				location: 'Microelectronics factory in Minsk, Belarus',
+				description: 'Supported retail accounting system LS Trade, troubleshoot technical problems.',
+				link: [],
+			},
+		],
+
+		education: [
+			{
+				img: imgSrcPng + 'icon1.png',
+				title: 'Interface Design: Web & Mobile',
+				body: 'IT-Academy, 2020'
+			},
+			{
+				img: imgSrcPng + 'icon2.png',
+				title: 'Fundamentals of Usability',
+				body: 'Skillshare, Oct 2018'
+			},
+			{
+				img: imgSrcPng + 'icon3.png',
+				title: 'CG Artist',
+				body: 'Polygon CG School, May-Sep 2017'
+			},
+			{
+				img: imgSrcPng + 'icon4.png',
+				title: 'Graphic Design',
+				body: 'Belarusian State Academy of Arts, 2015 - 2017 Postgraduate Diploma'
+			},
+			{
+				img: imgSrcPng + 'icon5.png',
+				title: 'SEO Specialist',
+				body: 'ARTOX Media, Jun-Aug 2012'
+			},
+					{
+				img: imgSrcPng + 'icon6.png',
+				title: 'Information Technology Software',
+				body: 'Belarusian State University of Informatics and Radioelectronics, 2011 - 2015 Bachelor’s degree Polotsk State Economic College, 2007 - 2011 Associate’s degree'
+			}
+		],
+
+		skils: [
+			{
+				title: 'Adobe Creative Suite',
+				body: 'Photoshop, Illustrator, InDesign, XD, After Effects'
+			},
+			{
+				title: 'Prototyping',
+				body: 'Sketch, Figma, InVision, Marvel, Principle, Balsamiq'
+			},
+			{
+				title: 'Additional',
+				body: 'HTML, CSS, Google Analytics, Keynote, Miro'
+			},
+			{
+				title: 'Languages',
+				body: 'Conversational English and Native Russian'
+			},
+		],
+
+		social: {
+			fb: {
+				icon: imgSrcSvg + 'fb.svg',
+				link: 'https://www.facebook.com/'
+			},
+			vc: {
+				icon:  imgSrcSvg + 'vk.svg',
+				link: 'https://vk.com/feed'
+			},
+			telegram: {
+				icon: imgSrcSvg + 'tg.svg',
+				link: 'https://web.telegram.org/k/'
+			}
+		},
+
+		share: {
+			caption: 'Поделиться:',
+			list: ['fb', 'tw', 'vk', 'ok'],
+		},
+
+		home: {
+			title: 'гид&nbsp;по <br><span class="for-desktop">бережному</span><span class="for-devices">общению</span>',
+			read: 'Читать',
+		},
+
+		modal: {
+			close: 'Закрыть',
+		},
+
+		footer: {
+			src: imgSrcPng + 'footer-img.png',
+		}
+	};
+
+script.
+	window.data = {
+		home: !{JSON.stringify(data.home)},
+	};

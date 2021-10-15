@@ -1,0 +1,127 @@
+main.home
+	.container
+		section.cv#cv(data-aos="fade-left" data-aos-delay="6000")
+			img.cv__background(src=data.img.cv)
+			.cv__left-section 
+				img.cv__photo(src=data.cv.photo data-aos="fade-left")
+				.cv__name 
+					| Maxim Tyumenbaev
+
+				.cv__position 
+					| Frontend developer 
+				
+				.cv__description
+					| Как разработчик, я высоко ценю способность воплотить видение дизайнера в жизнь, что считаю очень полезным для 
+					| бизнеса. Я получаю огромное удовлетворение, наблюдая за работой от идеи до дизайна, особенно когда она появляется
+					| в руках пользователя. Я считаю, что ориентированные на пользователя решения являются наиболее ценными цифровыми ресурсами будущего.
+
+			.cv__right-section
+				.contacts 
+					a.contacts__item(href=data.cv.email)
+						| Tymenbaev.m@gmail.com
+
+					a.contacts__item(href=data.cv.tel)
+						| +7 (999) 121-76-62
+
+					adress.contacts__item
+						| N. Novgorod
+
+					.social
+						each obj, key in data.social
+							a.social__item(href=obj.link target="blank")
+								img.social__icon(src=obj.icon)
+
+			img.cv__background(src=data.img.cvBig)
+
+		section.experience#experience
+		
+			.column-experience
+				h2.section__title(data-aos="fade-up")
+					| Опыт работы
+				each object, key in data.experience
+					.column-experience__item(data-aos="fade-up")
+						.column-experience__item-date
+							| #{object.date}
+						if object.position
+							.column-experience__item-position
+								| #{object.position}
+								if object.icon
+									img.column-experience__item-position-img(src=object.icon)
+
+						.column-experience__item-company
+							if object.logo
+								img.column-experience__item-company-logo(src=object.logo)
+							if object.location
+								.column-experience__item-company-location
+									if object.company
+										span
+											| #{object.company}
+									| #{object.location}
+
+						.column-experience__item-description
+							| #{object.description}
+						each link in object.link 
+							a.column-experience__item-link
+								| #{link}
+
+			img.experience__background(src=data.img.experience)
+
+			.column-education
+				h2.section__title(data-aos="fade-up")
+					| Образование
+				
+				each object in data.education 
+					.column-education__item(data-aos="fade-up")
+						img.column-education__item-img(src=object.img)
+						.column-education__item-title
+							| #{object.title}
+						
+						.column-education__item-body
+							| #{object.body}
+
+		section.skils#skils
+			img.skils__background(src=data.img.skils)
+			h2.section__title
+				| Навыки
+			.skils__list 
+				each object in data.skils
+					.skils__item(data-aos="fade-up")
+						.skils__item-title 	
+							| #{object.title}
+						.skils__item-body 	
+							| #{object.body}
+
+
+
+	//- +lazyPicture({
+	//- 	src: `${baseDir}images/mem.jpg`,
+	//- 	alt: 'Мемчик',
+	//- }).home__picture#hello
+
+	//- p.home__text#necessarily
+	//- 	| Это стартовый шаблон для верстки!
+	//- 	br
+	//- 	br
+	//- 	| Обязательно посмотри реализацию:
+	//- 	br
+	//- 	| pug в папке #[code pug/(components|pages)],
+	//- 	br
+	//- 	| js в папке #[code js/(components|modules|pages)],
+	//- 	br
+	//- 	| scss в папке #[code scss/(components|pages)]
+	//- 	br
+	//- 	br
+	//- 	| Не используемые части кода/компонентов можно просто отключить (удалять не рекомендуется)
+	//- 	br
+	//- 	br
+	//- 	| Не забывай читать #[a(href="https://github.com/ninelines-team/ninelines-docs" target="_blank") документацию]!
+
+	//- //- picture.home__picture.home__picture--2#bye
+	//- +lazyPicture({
+	//- 	src: `${baseDir}images/mem-2.jpg`,
+	//- 	alt: 'Мемчик 2',
+	//- }, [
+	//- 	{
+	//- 		srcset: `${baseDir}images/mem-2.jpg`,
+	//- 	}
+	//- ]).home__picture.home__picture--2#bye

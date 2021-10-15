@@ -1,0 +1,466 @@
+.home {
+	.section__title {
+		@include text('SFProDisplay', 24px, 700, 29px);
+		margin-bottom: 30px;
+
+		opacity: 0;
+		transform: translateY(30px);
+		transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+		&.aos-animate {
+			opacity: 1;
+			transform: translate(0);
+		}
+	}
+
+	.cv {
+		display: flex;
+		min-height: 700px;
+		position: relative;
+
+		opacity: 0;
+		transform: translateY(-100px);
+		transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+		transition-delay: 0.6s;
+		
+		&.aos-animate {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		&__background {
+			position: absolute;
+
+			&:first-child {
+				right: 141px;
+				top: -8.3px;
+				width: 188px;
+
+				mix-blend-mode: normal;
+				transform: rotate(0deg);
+			}
+
+			&:last-child {
+				bottom: -85px;
+			}
+		}
+
+		&__right-section {
+			margin-top: 291px;
+			margin-left: auto;
+			margin-right: 118px;
+		}
+
+		&__photo {
+			margin-top: 100px;
+
+			opacity: 0;
+			transform: translateY(-100px);
+			transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+			&.aos-animate {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		&__name {
+			margin-top: 40px;
+			@include text('SFProDisplay', 36px, 700, 140%);
+		}
+
+		&__position {
+			@include text('SFProDisplay', 36px, 700, 140%);
+		}
+
+		&__description {
+			margin-top: 30px;
+			max-width: 560px;
+			@include text('SFProDisplay', 14px, 400, 19.6px);
+		}
+
+		
+	}
+
+	.contacts {
+		&__item {
+			display: block;
+			@include text('SFProDisplay', 14px, 400, 19.6px);
+			margin-bottom: 10px;
+			margin-left: auto;
+		}
+
+	}
+
+	.social {
+		margin-top: 16px;
+
+		&__item {
+			margin-right: 20px;
+		}
+	}
+
+	.experience {
+		display: flex;
+		justify-content: space-between;
+
+		&__background {
+			z-index: 1;
+			position: absolute;
+			right: 174px;
+			top: 18px;
+		}
+
+		.column-experience {
+			z-index: 2;
+			max-width: 560px;
+			&__item-date,
+			&__item-link,
+			&__item-description,
+			&__item-position,
+			&__item-company {
+				margin-bottom: 8px;
+			}
+
+			&__item {
+				@include text('SFProDisplay', 14px, 400, 17px);
+				margin-bottom: 60px;
+				opacity: 0;
+				transform: translateY(30px);
+				transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+				&.aos-animate {
+					opacity: 1;
+					transform: translate(0);
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			&__item-date {
+				color: $color-gray
+			}
+	
+			&__item-position{
+				@include text('SFProDisplay', 14px, 700, 17px);
+			}
+	
+			&__item-position-img {
+				height: 17px;
+				width: auto;
+				margin-left: 8px;
+			}
+	
+			&__item-company {
+				display: flex;
+				align-items: center;
+
+				span {
+					font-weight: 700;
+					margin-right: 8px;
+				}
+			}
+	
+			&__item-company-logo {
+				width: 30px;
+				height: 30px;
+				margin-right: 8px;
+			}
+					
+			&__item-company-location {
+	
+			}
+	
+			&__item-description {
+				margin-bottom: 4px;
+				line-height: 19px;
+	
+			}
+												
+			&__item-link {
+				display: block;
+				margin-bottom: 4px;
+				color: $color-blue;				
+			}
+		}
+
+		.column-education {
+			z-index: 2;
+			width: 232px;
+
+			.section__title {
+				margin-left: 20px;
+			}
+
+			.column-education__item {
+				text-align: center;
+				width: 190px;
+				padding: 0 15px;
+				margin-bottom: 30px;
+				@include text('SFProDisplay', 14px, 400, 17px);
+
+				opacity: 0;
+				transform: translateY(30px);
+				transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+				&.aos-animate {
+					opacity: 1;
+					transform: translate(0);
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				&-img {
+					height: 40px;
+					width: auto;
+					margin-bottom: 5px;
+				}
+
+				&-title {
+					font-weight: 700;
+					margin-bottom: 8px;
+				}
+
+				&-body {
+
+				}
+			}
+		}			
+	}
+
+	.skils {
+		margin-top: 200px;
+		margin-bottom: 260px;
+
+		.section__title {
+			margin-bottom: 20px;
+		}
+
+		&__background {
+			top: -195px;
+			position: absolute;
+		}
+
+		&__list {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__item {
+			margin-right: 20px;
+			max-width: 270px;
+			@include text('SFProDisplay', 14px, 400, 17px);
+
+			opacity: 0;
+			transform: translateX(-30px);
+			transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+			&.aos-animate {
+				opacity: 1;
+				transform: translate(0);
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&-title {
+				font-weight: 700;
+				margin-bottom: 8px;
+			}
+		}
+
+		&__item-body {
+
+		}
+	}
+
+}
+
+@include mobile {
+	.home {
+		.cv {
+			flex-direction: column;
+			min-height: auto;
+			margin-bottom: 25px;
+
+			&__background {
+				position: absolute;
+	
+				&:first-child {
+					display: none;
+				}
+	
+				&:last-child {
+					bottom: 100px;
+					width: 100%;
+				}
+			}
+	
+
+			&__photo {
+				margin-top: 20px;
+				height: 80px;
+				width: 80px;
+			}
+
+			&__name,
+			&__position {
+				@include text('SFProDisplay', 28px, 700, 140%);
+			}
+
+			&__name {
+				margin-top: 30px;
+			}
+
+			&__description {
+				margin-top: 20px;
+			}
+
+			&__right-section {
+				margin-top: 20px;
+				margin-left: 0;
+			}
+		}	
+
+		.experience {
+			flex-direction: column;
+
+			.section__title {
+				@include text('SFProDisplay', 20px, 700, 24px);
+			}
+
+			&__background {
+				z-index: 1;
+				position: static;
+				width: 200px;
+				height: 200px;
+				margin: 0 auto;
+			}
+
+			.column-experience {
+				margin-bottom: 40px;
+
+				.section__title {
+					margin-bottom: 20px;
+				}
+			}
+
+			.column-education {
+				z-index: 2;
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: 40px;
+	
+				.section__title {
+					width: 100%;
+					margin: 0;
+					margin-bottom: 16px;
+				}
+	
+				.column-education__item {
+					text-align: center;
+					width: calc(50% - 10px);
+					padding: 0 15px;
+					margin-bottom: 30px;
+					@include text('SFProDisplay', 14px, 400, 17px);
+	
+					&:last-child {
+						margin-bottom: 0;
+					}
+	
+					&-img {
+						height: 40px;
+						width: auto;
+						margin-bottom: 5px;
+					}
+	
+					&-title {
+						font-weight: 700;
+						margin-bottom: 8px;
+					}
+	
+					&-body {
+	
+					}
+				}
+			}	
+		}
+
+		.skils {
+			margin-top: 41px;
+			margin-bottom: 90px;
+
+			.section__title {
+				@include text('SFProDisplay', 22px, 700, 26px);
+			}
+
+			&__background {
+
+			}
+
+			&__list {
+				flex-direction: column;
+			}
+
+			&__item {
+				margin-right: 0;
+				margin-bottom: 22px;
+				max-width: 100%;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+	
+
+
+	//  &__picture {
+	// 	display: block;
+	// 	margin: 0 auto 40px;
+	// 	max-width: 500px;
+	// 	opacity: 0;
+	// 	transition: $duration-normal;
+
+	// 	&[data-loaded="true"] {
+	// 		opacity: 1;
+	// 	}
+
+	// 	&--2 {
+	// 		margin-top: 40px;
+	// 		margin-bottom: 0;
+	// 	}
+	// }
+
+	// &__text {
+	// 	margin: 0 auto;
+	// 	max-width: 500px;
+	// 	font-size: 20px;
+	// 	line-height: 26px;
+
+	// 	a {
+	// 		text-decoration: underline;
+
+	// 		@include hover {
+	// 			text-decoration: none;
+	// 		}
+	// 	}
+
+	// 	code {
+	// 		padding: 5px;
+	// 		background-color: $color-gray;
+	// 	}
+	// }
+
+	// @include desktop {
+	// 	padding: 100px 0;
+	// }
+
