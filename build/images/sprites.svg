@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<radialGradient id="icon-min1-a" cx="0" cy="0" r="1" gradientTransform="rotate(135 12.76 10.633) scale(15.1875)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#77C9FB"/>
+			<stop offset="1" stop-color="#4EBFF3"/>
+		</radialGradient>
+		<radialGradient id="icon-min1-b" cx="0" cy="0" r="1" gradientTransform="rotate(135 8.26 8.77) scale(15.1875)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFE975"/>
+			<stop offset="1" stop-color="#FFCF41"/>
+		</radialGradient>
+		<radialGradient id="icon-min1-c" cx="0" cy="0" r="1" gradientTransform="rotate(135 3.76 6.906) scale(15.1875)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#AEA9FE"/>
+			<stop offset="1" stop-color="#938DF8"/>
+		</radialGradient>
+
+		<radialGradient id="icon-min2-a" cx="0" cy="0" r="1" gradientTransform="rotate(135 8.264 8.762) scale(15.1875)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FE73A5"/>
+			<stop offset="1" stop-color="#EF5389"/>
+		</radialGradient>
+		<radialGradient id="icon-min2-b" cx="0" cy="0" r="1" gradientTransform="rotate(135 3.764 6.898) scale(15.1875)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#77C9FB"/>
+			<stop offset="1" stop-color="#4EBFF3"/>
+		</radialGradient>
+
+		<radialGradient id="icon-min3-a" cx="0" cy="0" r="1" gradientTransform="rotate(135 7.758 8.57) scale(15.1875)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#77C9FB"/>
+			<stop offset="1" stop-color="#4EBFF3"/>
+		</radialGradient>
+		<radialGradient id="icon-min3-b" cx="0" cy="0" r="1" gradientTransform="rotate(135 3.758 6.913) scale(15.1875)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFBB87"/>
+			<stop offset="1" stop-color="#FFA35C"/>
+		</radialGradient>
+
+		<radialGradient id="icon-min4-a" cx="0" cy="0" r="1" gradientTransform="rotate(135 3.758 6.913) scale(15.1875)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFBB87"/>
+			<stop offset="1" stop-color="#FFA45E"/>
+		</radialGradient>
+
+		<radialGradient id="icon-min5-a" cx="0" cy="0" r="1" gradientTransform="rotate(135 3.758 6.913) scale(15.1875)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#64DDBA"/>
+			<stop offset="1" stop-color="#3FC59D"/>
+		</radialGradient>
+
+		<radialGradient id="icon1-a" cx="0" cy="0" r="1" gradientTransform="rotate(134.648 6.538 3.466) scale(17.3569)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#7CCBFC"/>
+			<stop offset="1" stop-color="#48BDF1"/>
+		</radialGradient>
+		<radialGradient id="icon1-b" cx="0" cy="0" r="1" gradientTransform="rotate(135 6.879 3.375) scale(18.75)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFEF9D"/>
+			<stop offset="1" stop-color="#FFCF41"/>
+		</radialGradient>
+		<radialGradient id="icon1-c" cx="0" cy="0" r="1" gradientTransform="rotate(135 13.797 6.625) scale(37.9688)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#AFAAFE"/>
+			<stop offset="1" stop-color="#928CF8"/>
+		</radialGradient>
+
+		<radialGradient id="icon2-a" cx="0" cy="0" r="1" gradientTransform="rotate(135 8.611 15.337) scale(37.9688)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFE975"/>
+			<stop offset="1" stop-color="#FFCD3D"/>
+		</radialGradient>
+
+		<radialGradient id="icon3-a" cx="0" cy="0" r="1" gradientTransform="rotate(135 8.981 16.607) scale(35.4375)" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FE74A6"/>
+			<stop offset="1" stop-color="#EE5087"/>
+		</radialGradient>
+	</defs>
+<symbol id="fb" viewBox="0 0 25 25">
+	<rect width="25" height="25" fill="#282A33" rx="5"/>
+	<path fill="#fff" d="m17.862 15.86.57-3.717h-3.566v-2.41c0-1.018.497-2.01 2.094-2.01h1.622V4.56s-1.471-.251-2.877-.251c-2.938 0-4.857 1.78-4.857 5.002v2.833H7.583v3.716h3.265v8.985a12.93 12.93 0 0 0 2.009.156c.683 0 1.354-.053 2.009-.156V15.86h2.996Z"/>
+</symbol>
+<symbol id="icon-min1" viewBox="0 0 35 17">
+	<rect width="12" height="12" x="18" y="8.5" fill="url(#icon-min1-a)" rx="2" transform="rotate(-45 18 8.5)"/>
+	<rect width="12" height="12" x="9" y="8.5" fill="url(#icon-min1-b)" rx="2" transform="rotate(-45 9 8.5)"/>
+	<rect width="12" height="12" y="8.5" fill="url(#icon-min1-c)" rx="2" transform="rotate(-45 0 8.5)"/>
+
+</symbol>
+<symbol id="icon-min2" viewBox="0 0 26 17">
+	<rect width="12" height="12" x="9" y="8.485" fill="url(#icon-min2-a)" rx="2" transform="rotate(-45 9 8.485)"/>
+	<rect width="12" height="12" y="8.485" fill="url(#icon-min2-b)" rx="2" transform="rotate(-45 0 8.485)"/>
+
+</symbol>
+<symbol id="icon-min3" viewBox="0 0 25 17">
+	<rect width="12" height="12" x="8" y="8.515" fill="url(#icon-min3-a)" rx="2" transform="rotate(-45 8 8.515)"/>
+	<rect width="12" height="12" y="8.515" fill="url(#icon-min3-b)" rx="2" transform="rotate(-45 0 8.515)"/>
+
+</symbol>
+<symbol id="icon-min4" viewBox="0 0 17 17">
+	<rect width="12" height="12" y="8.515" fill="url(#icon-min4-a)" rx="2" transform="rotate(-45 0 8.515)"/>
+
+</symbol>
+<symbol id="icon-min5" viewBox="0 0 17 17">
+	<rect width="12" height="12" y="8.515" fill="url(#icon-min5-a)" rx="2" transform="rotate(-45 0 8.515)"/>
+
+</symbol>
+<symbol id="icon1" viewBox="0 0 63 43">
+	<rect width="15" height="15" fill="url(#icon1-a)" stroke="#C0F0FF" stroke-width="3" rx="4" transform="matrix(.7071 -.7071 .71109 .7031 .744 20.115)"/>
+	<rect width="15" height="15" fill="url(#icon1-b)" stroke="#FFF3B5" stroke-width="3" rx="4" transform="matrix(.7071 -.7071 .71109 .7031 40.983 20.115)"/>
+	<rect width="26" height="26" x="2.836" y="-.008" fill="url(#icon1-c)" stroke="#CCC9FD" stroke-width="4" rx="6" transform="matrix(.7071 -.7071 .71109 .7031 11.756 23.216)"/>
+
+</symbol>
+<symbol id="icon2" viewBox="0 0 37 37">
+	<rect width="26" height="26" x=".115" y="18.52" fill="url(#icon2-a)" stroke="#FFF3B5" stroke-width="4" rx="6" transform="rotate(-45 .115 18.52)"/>
+
+</symbol>
+<symbol id="icon3" viewBox="0 0 41 41">
+	<rect width="24" height="24" x="3.529" y="20.532" fill="url(#icon3-a)" stroke="#FF99BE" stroke-width="4" rx="6" transform="rotate(-45 3.53 20.532)"/>
+
+</symbol>
+<symbol id="scrolling indicator_white" viewBox="0 0 48 48">
+	<path fill="#282A33" d="M48 24c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24ZM.96 24C.96 36.725 11.275 47.04 24 47.04S47.04 36.725 47.04 24 36.725.96 24 .96.96 11.275.96 24Z"/>
+</symbol>
+<symbol id="tg" viewBox="0 0 25 25">
+	<rect width="25" height="25" fill="#282A33" rx="5"/>
+	<path fill="#fff" d="M5.222 12.088c1.503-.827 3.18-1.518 4.748-2.213 2.697-1.137 5.405-2.255 8.14-3.296.532-.177 1.488-.35 1.582.438-.052 1.116-.263 2.226-.408 3.335-.367 2.44-.792 4.873-1.207 7.305-.143.81-1.157 1.23-1.807.711-1.56-1.054-3.133-2.098-4.674-3.177-.505-.513-.037-1.249.414-1.615 1.286-1.267 2.649-2.343 3.867-3.675.329-.794-.642-.125-.963.08-1.76 1.212-3.476 2.5-5.331 3.565-.948.522-2.052.076-3-.215-.849-.352-2.094-.706-1.361-1.242Z"/>
+</symbol>
+<symbol id="vk" viewBox="0 0 25 25">
+	<rect width="25" height="25" fill="#282A33" rx="5"/>
+	<path fill="#fff" fill-rule="evenodd" d="M20.119 8.532c.12-.38 0-.658-.533-.658h-1.769c-.446 0-.652.243-.772.502 0 0-.91 2.216-2.181 3.653-.412.415-.601.554-.824.554-.12 0-.275-.139-.275-.52V8.516c0-.45-.138-.658-.515-.658h-2.782a.428.428 0 0 0-.447.416c0 .432.636.536.704 1.748v2.631c0 .571-.103.675-.326.675-.601 0-2.06-2.233-2.936-4.777-.172-.502-.344-.693-.79-.693H4.887c-.515 0-.601.243-.601.502 0 .468.6 2.822 2.799 5.938 1.46 2.129 3.537 3.271 5.41 3.271 1.132 0 1.27-.26 1.27-.692v-1.61c0-.52.103-.606.463-.606.258 0 .722.139 1.77 1.16 1.201 1.212 1.407 1.766 2.077 1.766h1.769c.515 0 .755-.26.618-.762-.155-.502-.738-1.229-1.494-2.095-.412-.484-1.03-1.02-1.22-1.28-.257-.347-.188-.485 0-.797-.016 0 2.147-3.081 2.37-4.12Z" clip-rule="evenodd"/>
+</symbol>
+</svg>
