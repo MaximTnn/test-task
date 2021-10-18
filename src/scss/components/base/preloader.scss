@@ -1,0 +1,28 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+
+    &__img {
+        position: absolute;
+        left: -591px;
+        bottom: -591px;
+        height: 591px;
+        width: 591px;
+        transition: all 2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+}
+
+@include mobile {
+    .preloader {
+        &__img {
+            height: 180px;
+            width: 180px;
+            bottom: 20%;
+            left: 0;
+        }
+    }
+}

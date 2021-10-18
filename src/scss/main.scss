@@ -9,14 +9,23 @@
 @import "base";
 @import "helpers";
 
+@import "components/base/js-back-to-top.scss";
+@import "components/base/locomotiveScroll.scss";
 @import "components/header";
 @import "components/footer";
+@import "components/base/preloader.scss";
 
 @import "pages/home";
 
 body {
     width: 100vw;
     color: $color-black;
+    min-width: 1024px;
+}
+
+.site {
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 section {
@@ -25,12 +34,17 @@ section {
 
 .container {
     max-width: 1140px;
+    min-width: 960px;
     padding: 0 60px;
 }
 
 @include mobile {
+    body{
+        min-width: 320px;
+    }
     .container {
         padding: 0 20px;
+        min-width: 320px;
     }
 }
 

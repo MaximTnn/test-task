@@ -1,10 +1,10 @@
 main.home
-	.container
-		section.cv#cv(data-aos="fade-left" data-aos-delay="6000")
-			img.cv__background(src=data.img.cv)
-			.cv__left-section 
-				img.cv__photo(src=data.cv.photo data-aos="fade-left")
-				.cv__name 
+	.container(data-scroll-container)
+		section.cv#cv(data-aos="fade-up")
+			img.cv__background(data-aos="fade-up")
+			.cv__left-section(data-aos="fade-up") 
+				img.cv__photo(src=data.cv.photo data-aos="fade-up")
+				.cv__name(data-scroll) 
 					| Maxim Tyumenbaev
 
 				.cv__position 
@@ -15,7 +15,7 @@ main.home
 					| бизнеса. Я получаю огромное удовлетворение, наблюдая за работой от идеи до дизайна, особенно когда она появляется
 					| в руках пользователя. Я считаю, что ориентированные на пользователя решения являются наиболее ценными цифровыми ресурсами будущего.
 
-			.cv__right-section
+			.cv__right-section(data-aos="fade-up")
 				.contacts 
 					a.contacts__item(href=data.cv.email)
 						| Tymenbaev.m@gmail.com
@@ -28,12 +28,12 @@ main.home
 
 					.social
 						each obj, key in data.social
-							a.social__item(href=obj.link target="blank")
+							a.social__item(class=obj.class href=obj.link target="blank")
 								img.social__icon(src=obj.icon)
 
 			img.cv__background(src=data.img.cvBig)
 
-		section.experience#experience
+		section.experience#experience(data-scroll-section)
 		
 			.column-experience
 				h2.section__title(data-aos="fade-up")
@@ -79,11 +79,11 @@ main.home
 						.column-education__item-body
 							| #{object.body}
 
-		section.skils#skils
+		section.skils#skils(data-scroll-section)
 			img.skils__background(src=data.img.skils)
-			h2.section__title
+			h2.section__title(data-aos="fade-up")
 				| Навыки
-			.skils__list 
+			.skils__list
 				each object in data.skils
 					.skils__item(data-aos="fade-up")
 						.skils__item-title 	

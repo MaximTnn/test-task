@@ -4,9 +4,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1634292329927">
+		<link rel="stylesheet" href="./css/main.css?v=1634568933667">
 	</head>
 	<body>
+		<div class="preloader" id="preloader"> <img class="preloader__img" src="./images/sprites/png/preload-img.png"></div>
 		<script>
 			window.data = {
 				home: {"title":"гид&nbsp;по <br><span class=\"for-desktop\">бережному</span><span class=\"for-devices\">общению</span>","read":"Читать"},
@@ -14,17 +15,19 @@
 		</script>
 		<div class="site">
 			<header class="header">
-				<button class="header__burger btn js-burger" type="button"><span></span></button>
-				<nav class="header__menu">
-					<div class="header__list" data-aos="fade-left"><a class="header__link js-to-anchor" href="#cv" data-link="0">Резюме</a><a class="header__link js-to-anchor" href="#experience" data-link="1">О себе</a><a class="header__link js-to-anchor" href="#skils" data-link="2">Навыки</a><img class="header__img" src="/images/sprites/png/header-img.png">
-					</div>
-				</nav>
+				<div class="container">
+					<button class="header__burger btn js-burger" type="button"><span></span></button>
+					<nav class="header__menu">
+						<div class="header__list" data-aos="fade-left"><a class="header__link js-to-anchor" href="#cv" data-link="0" style="transition-delay: 0.3s">Резюме</a><a class="header__link js-to-anchor" href="#experience" data-link="1" style="transition-delay: 0.4s">О себе</a><a class="header__link js-to-anchor" href="#skils" data-link="2" style="transition-delay: 0.5s">Навыки</a><img class="header__img" src="./images/sprites/png/header-img.png">
+						</div>
+					</nav>
+				</div>
 			</header>
 			<main class="home">
-				<div class="container">
-					<section class="cv" id="cv" data-aos="fade-left" data-aos-delay="6000"><img class="cv__background" src="/images/sprites/png/bg-cv.png">
-						<div class="cv__left-section"> <img class="cv__photo" src="/images/sprites/png/avatar.png" data-aos="fade-left">
-							<div class="cv__name">
+				<div class="container" data-scroll-container>
+					<section class="cv" id="cv" data-aos="fade-up"><img class="cv__background" data-aos="fade-up">
+						<div class="cv__left-section" data-aos="fade-up"> <img class="cv__photo" src="./images/sprites/png/avatar.png" data-aos="fade-up">
+							<div class="cv__name" data-scroll>
 								 Maxim Tyumenbaev</div>
 							<div class="cv__position">
 								 Frontend developer </div>
@@ -34,20 +37,20 @@
 								в руках пользователя. Я считаю, что ориентированные на пользователя решения являются наиболее ценными цифровыми ресурсами будущего.
 							</div>
 						</div>
-						<div class="cv__right-section">
+						<div class="cv__right-section" data-aos="fade-up">
 							<div class="contacts"> <a class="contacts__item" href="mailto:tyumenaebv.m@gmail.com">Tymenbaev.m@gmail.com</a><a class="contacts__item" href="tel:+79991217662">+7 (999) 121-76-62</a>
 								<adress class="contacts__item">N. Novgorod</adress>
-								<div class="social"><a class="social__item" href="https://www.facebook.com/" target="blank"><img class="social__icon" src="/images/sprites/svg/fb.svg"></a><a class="social__item" href="https://vk.com/feed" target="blank"><img class="social__icon" src="/images/sprites/svg/vk.svg"></a><a class="social__item" href="https://web.telegram.org/k/" target="blank"><img class="social__icon" src="/images/sprites/svg/tg.svg"></a>
+								<div class="social"><a class="social__item facebook-btn" href="https://www.facebook.com/" target="blank"><img class="social__icon" src="./images/sprites/svg/fb.svg"></a><a class="social__item vk-btn" href="https://vk.com/feed" target="blank"><img class="social__icon" src="./images/sprites/svg/vk.svg"></a><a class="social__item tg-btn" href="https://web.telegram.org/k/" target="blank"><img class="social__icon" src="./images/sprites/svg/tg.svg"></a>
 								</div>
 							</div>
-						</div><img class="cv__background" src="/images/sprites/png/bg-cv-big.png">
+						</div><img class="cv__background" src="./images/sprites/png/bg-cv-big.png">
 					</section>
-					<section class="experience" id="experience">
+					<section class="experience" id="experience" data-scroll-section>
 						<div class="column-experience">
 							<h2 class="section__title" data-aos="fade-up">Опыт работы</h2>
 							<div class="column-experience__item" data-aos="fade-up">
 								<div class="column-experience__item-date">Июль 2019</div>
-								<div class="column-experience__item-position">Freelance Designer<img class="column-experience__item-position-img" src="/images/sprites/png/icon-min1.png">
+								<div class="column-experience__item-position">Freelance Designer<img class="column-experience__item-position-img" src="./images/sprites/png/icon-min1.png">
 								</div>
 								<div class="column-experience__item-company">
 									<div class="column-experience__item-company-location">Netherlands, Worldwide
@@ -57,9 +60,9 @@
 							</div>
 							<div class="column-experience__item" data-aos="fade-up">
 								<div class="column-experience__item-date">Январь 2017 - Сентябрь 2018</div>
-								<div class="column-experience__item-position">Digital Designer<img class="column-experience__item-position-img" src="/images/sprites/png/icon-min2.png">
+								<div class="column-experience__item-position">Digital Designer<img class="column-experience__item-position-img" src="./images/sprites/png/icon-min2.png">
 								</div>
-								<div class="column-experience__item-company"><img class="column-experience__item-company-logo" src="/images/sprites/png/logo-min1.png">
+								<div class="column-experience__item-company"><img class="column-experience__item-company-logo" src="./images/sprites/png/logo-min1.png">
 									<div class="column-experience__item-company-location"><span>J Creative Solutions</span>Digital agency in Minsk, Belarus
 									</div>
 								</div>
@@ -67,9 +70,9 @@
 							</div>
 							<div class="column-experience__item" data-aos="fade-up">
 								<div class="column-experience__item-date">	Март 2014 - Февраль 2017</div>
-								<div class="column-experience__item-position">	SEO Specialist → Lead SEO Specialist<img class="column-experience__item-position-img" src="/images/sprites/png/icon-min3.png">
+								<div class="column-experience__item-position">	SEO Specialist → Lead SEO Specialist<img class="column-experience__item-position-img" src="./images/sprites/png/icon-min3.png">
 								</div>
-								<div class="column-experience__item-company"><img class="column-experience__item-company-logo" src="/images/sprites/png/logo-min2.png">
+								<div class="column-experience__item-company"><img class="column-experience__item-company-logo" src="./images/sprites/png/logo-min2.png">
 									<div class="column-experience__item-company-location"><span>OZ.by</span>Online bookstore in Minsk, Belarus
 									</div>
 								</div>
@@ -77,9 +80,9 @@
 							</div>
 							<div class="column-experience__item" data-aos="fade-up">
 								<div class="column-experience__item-date">Август 2012 - Ноябрь 2013</div>
-								<div class="column-experience__item-position">Content Specialist<img class="column-experience__item-position-img" src="/images/sprites/png/icon-min3.png">
+								<div class="column-experience__item-position">Content Specialist<img class="column-experience__item-position-img" src="./images/sprites/png/icon-min3.png">
 								</div>
-								<div class="column-experience__item-company"><img class="column-experience__item-company-logo" src="/images/sprites/png/logo-min3.png">
+								<div class="column-experience__item-company"><img class="column-experience__item-company-logo" src="./images/sprites/png/logo-min3.png">
 									<div class="column-experience__item-company-location"><span>21vek.by</span>E-commerce store in Minsk, Belarus
 									</div>
 								</div>
@@ -87,46 +90,46 @@
 							</div>
 							<div class="column-experience__item" data-aos="fade-up">
 								<div class="column-experience__item-date">Август 2011 - Ноябрь 2014</div>
-								<div class="column-experience__item-position">Software Support Engineer<img class="column-experience__item-position-img" src="/images/sprites/png/icon-min5.png">
+								<div class="column-experience__item-position">Software Support Engineer<img class="column-experience__item-position-img" src="./images/sprites/png/icon-min5.png">
 								</div>
-								<div class="column-experience__item-company"><img class="column-experience__item-company-logo" src="/images/sprites/png/logo-min4.png">
+								<div class="column-experience__item-company"><img class="column-experience__item-company-logo" src="./images/sprites/png/logo-min4.png">
 									<div class="column-experience__item-company-location"><span>Integral</span>Microelectronics factory in Minsk, Belarus
 									</div>
 								</div>
 								<div class="column-experience__item-description">Supported retail accounting system LS Trade, troubleshoot technical problems.</div>
 							</div>
-						</div><img class="experience__background" src="/images/sprites/png/experience-men.png">
+						</div><img class="experience__background" src="./images/sprites/png/experience-men.png">
 						<div class="column-education">
 							<h2 class="section__title" data-aos="fade-up">Образование</h2>
-							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="/images/sprites/png/icon1.png">
+							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="./images/sprites/png/icon1.png">
 								<div class="column-education__item-title">Interface Design: Web &amp; Mobile</div>
 								<div class="column-education__item-body">IT-Academy, 2020</div>
 							</div>
-							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="/images/sprites/png/icon2.png">
+							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="./images/sprites/png/icon2.png">
 								<div class="column-education__item-title">Fundamentals of Usability</div>
 								<div class="column-education__item-body">Skillshare, Oct 2018</div>
 							</div>
-							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="/images/sprites/png/icon3.png">
+							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="./images/sprites/png/icon3.png">
 								<div class="column-education__item-title">CG Artist</div>
 								<div class="column-education__item-body">Polygon CG School, May-Sep 2017</div>
 							</div>
-							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="/images/sprites/png/icon4.png">
+							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="./images/sprites/png/icon4.png">
 								<div class="column-education__item-title">Graphic Design</div>
 								<div class="column-education__item-body">Belarusian State Academy of Arts, 2015 - 2017 Postgraduate Diploma</div>
 							</div>
-							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="/images/sprites/png/icon5.png">
+							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="./images/sprites/png/icon5.png">
 								<div class="column-education__item-title">SEO Specialist</div>
 								<div class="column-education__item-body">ARTOX Media, Jun-Aug 2012</div>
 							</div>
-							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="/images/sprites/png/icon6.png">
+							<div class="column-education__item" data-aos="fade-up"><img class="column-education__item-img" src="./images/sprites/png/icon6.png">
 								<div class="column-education__item-title">Information Technology Software</div>
 								<div class="column-education__item-body">Belarusian State University of Informatics and Radioelectronics, 2011 - 2015 Bachelor’s degree Polotsk State Economic College, 2007 - 2011 Associate’s degree</div>
 							</div>
 						</div>
 					</section>
-					<section class="skils" id="skils"><img class="skils__background" src="/images/sprites/png/bg-skils.png">
-						<h2 class="section__title">Навыки</h2>
-						<div class="skils__list"> 
+					<section class="skils" id="skils" data-scroll-section><img class="skils__background" src="./images/sprites/png/bg-skils.png">
+						<h2 class="section__title" data-aos="fade-up">Навыки</h2>
+						<div class="skils__list">
 							<div class="skils__item" data-aos="fade-up">
 								<div class="skils__item-title">	Adobe Creative Suite</div>
 								<div class="skils__item-body">	Photoshop, Illustrator, InDesign, XD, After Effects</div>
@@ -147,7 +150,10 @@
 					</section>
 				</div>
 			</main>
-			<footer class="footer"><img class="footer__img" src="/images/sprites/png/footer-img.png"></footer>
+			<footer class="footer"><img class="footer__img" src="./images/sprites/png/footer-img.png"></footer>
+			<div class="js-back-to-top" href="#body"><span class="js-back-to-top__arrow"></span>
+				<div class="js-back-to-top__percent"></div>
+			</div>
 		</div>
 		<script>
 			var userAgent = navigator.userAgent.toLowerCase();
@@ -219,7 +225,7 @@
 				document.getElementsByTagName('head')[0].appendChild(script);
 			}
 		</script>
-		<script src="./js/vendor.js?v=1634292329927"></script>
-		<script src="./js/main.js?v=1634292329927"></script>
+		<script src="./js/vendor.js?v=1634568933667"></script>
+		<script src="./js/main.js?v=1634568933667"></script>
 	</body>
 </html>

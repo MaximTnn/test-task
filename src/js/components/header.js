@@ -57,26 +57,69 @@ function toggleMenu(event) {
 	}
 }
 
+function headerFix() {
+	if (window.pageYOffset > 20) {
+		$('.header').addClass('fix');
+	} else {
+		$('.header').removeClass('fix');
+	}
+}
+
+const allHeaderBtn = $('.js-to-anchor');
+const allIdSection = [];
+
+$(allHeaderBtn).each((el) => {
+	allIdSection.push($(allHeaderBtn[el]).attr('href'));
+});
+
+function addActiveBtn(id, idx) {
+	const section = $(`${id}`);
+	const topPosSection = section.offset().top;
+	const heightSection = section[0].offsetHeight;
+	const scrollPos = window.pageYOffset;
+
+	if (scrollPos + 50 >= topPosSection && scrollPos <= heightSection - 50) {
+		$(allHeaderBtn[idx]).addClass('active');
+	} else {
+		$(allHeaderBtn[idx]).removeClass('active');
+		if ($('.js-to-anchor.active').length === 0) {
+			$(allHeaderBtn[allHeaderBtn.length - 1]).addClass('active');
+		}
+	}
+}
+
 function init() {
-	helpers.$header = $('.header');
+	if (window.innerWidth <= 768) {
+		helpers.$header = $('.header');
 
-	$('.js-burger').on('click.header', toggleMenu);
+		$('.js-burger').on('click.header', toggleMenu);
 
-	helpers.$document
-		.on('click.header', (e) => {
-			let $container = $('.header__menu');
+		helpers.$document
+			.on('click.header', (e) => {
+				let $container = $('.header__menu');
 
-			if ($container.is(e.target) && $container.has(e.target).length === 0 && $container.hasClass('is-active')) {
-				closeMenu();
-				$('.js-burger').removeClass('is-active');
-			}
-		})
-		.on('keyup.header', (e) => {
-			if ((e.key === 'Escape' || e.key === 'Esc') && $('.header__menu').hasClass('is-active')) {
-				closeMenu();
-				$('.js-burger').removeClass('is-active');
-			}
-		});
+				if ($container.is(e.target) && $container.has(e.target).length === 0 && $container.hasClass('is-active')) {
+					closeMenu();
+					$('.js-burger').removeClass('is-active');
+				}
+			})
+			.on('keyup.header', (e) => {
+				if ((e.key === 'Escape' || e.key === 'Esc') && $('.header__menu').hasClass('is-active')) {
+					closeMenu();
+					$('.js-burger').removeClass('is-active');
+				}
+			});
+	}
+
+	window.addEventListener('scroll', () => {
+		if (window.innerWidth >= 768) {
+			headerFix();
+		}
+
+		setTimeout(() => {
+			allIdSection.map((id, index) => addActiveBtn(id, index));
+		}, 500);
+	});
 }
 
 function destroy() {

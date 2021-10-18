@@ -1,12 +1,19 @@
 .header {
-	max-width: 1140px;
+	width: 100vw;
 	padding: 0 60px;
 	margin: 0 auto;
 	position: fixed;
 	@include text('SFProDisplay', 18px, 700, 21.48px);
-	right: calc(((100vw - 1140px) / 2) - 5px);
-	margin-top: 100px;
+	padding-top: 100px;
+	padding-bottom: 20px;
 	z-index: 20;
+	background: transparent;
+	transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+	&.fix {
+		padding-top: 20px;
+		background-color: white;
+	}
 
 	&__burger {
 		display: none;
@@ -15,7 +22,6 @@
 	&__list {
 		margin-left: auto;
 		width: fit-content;
-
 		opacity: 0;
 		transform: translateY(-170px);
 		transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -31,6 +37,27 @@
 		margin-left: 32px;
 		position: relative;
 		z-index: 1;
+
+		&:hover {
+			&::before {
+				width: 100%;
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			height: 3px;
+			width: 0;
+			background-color: $color-black;
+			bottom: -5px;
+			transition: all .3s cubic-bezier(0.6, -0.28, 0.735, 0.045)		}
+
+		&.js-to-anchor.active {
+			&::before {
+				width: 100%;
+			}
+		}
 	}
 
 	&__img {
@@ -42,10 +69,15 @@
 		.header {
 			@include text('SFProDisplay', 26px, 700, 31px);
 			width: 100vw;
-			height: auto;
+			height: 0;
 			right: auto;
 			padding: 0;
 			margin-top: 0;
+
+			.container {
+				padding: 0;
+				height: 0;
+			}
 
 			&__menu {
 				display: block;
@@ -60,6 +92,15 @@
 				&.is-active {
 					display: block;
 					transform: translateX(0);
+
+					.header__list {
+						opacity: 1;
+
+						.header__link {
+							transform: translateX(0);
+							opacity: 1;
+						}
+					}
 				}
 			}
 
@@ -121,6 +162,8 @@
 
 			&__list {
 				margin-left: 0;
+				transform: translate(0);
+				transition-delay: 0.4s;
 			}
 
 			&__img {
@@ -135,6 +178,9 @@
 				display: block;	
 				margin-left: 40px;
 				margin-bottom: 40px;
+				transform: translateX(100px);
+				opacity: 0;
+				width: fit-content;
 			}
 		}
 	}

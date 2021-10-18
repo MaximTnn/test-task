@@ -280,6 +280,8 @@ html(class=html.classList)&attributes(html.attrs)
 		block head-end
 	body(class=body.classList)&attributes(body.attrs)
 		block body-start
+			.preloader#preloader 
+				img.preloader__img(src="./images/sprites/png/preload-img.png")
 		block content
 		block scripts
 			script.

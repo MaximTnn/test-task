@@ -1,6 +1,6 @@
 -
-	const imgSrcPng = '/images/sprites/png/'
-	const imgSrcSvg = '/images/sprites/svg/'
+	const imgSrcPng = './images/sprites/png/'
+	const imgSrcSvg = './images/sprites/svg/'
 
 	const data = {
 		header: {
@@ -26,7 +26,8 @@
 			avatar: imgSrcPng + 'avatar.png',
 			experience: imgSrcPng + 'experience-men.png',
 			skils: imgSrcPng + 'bg-skils.png',
-			headerImg: imgSrcPng + 'header-img.png'
+			headerImg: imgSrcPng + 'header-img.png',
+			preloader: imgSrcPng + 'preload-img.png'
 		},
 
 		cv: {
@@ -150,15 +151,18 @@
 		social: {
 			fb: {
 				icon: imgSrcSvg + 'fb.svg',
-				link: 'https://www.facebook.com/'
+				link: 'https://www.facebook.com/',
+				class: 'facebook-btn'
 			},
 			vc: {
 				icon:  imgSrcSvg + 'vk.svg',
-				link: 'https://vk.com/feed'
+				link: 'https://vk.com/feed',
+				class: 'vk-btn'
 			},
 			telegram: {
 				icon: imgSrcSvg + 'tg.svg',
-				link: 'https://web.telegram.org/k/'
+				link: 'https://web.telegram.org/k/',
+				class: 'tg-btn'
 			}
 		},
 
